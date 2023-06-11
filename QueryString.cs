@@ -13,7 +13,7 @@ public class QueryString
 
         NameValueCollection nvc = HttpUtility.ParseQueryString(queryString);
         foreach(string key in nvc.Keys) {
-            Console.WriteLine(key + "==" + HttpUtility.UrlDecode(nvc[key]));
+            Console.WriteLine(key + "=" + HttpUtility.UrlDecode(nvc[key]));
         }
         //nvc["val1"] = "12345";
         //Console.WriteLine(nvc.ToString());
